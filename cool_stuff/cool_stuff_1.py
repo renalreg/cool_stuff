@@ -1,7 +1,8 @@
-from rr_connection_manager import PostgresConnection
+from rr_connection_manager import PostgresConnection, SQLServerConnection
 
 
 conn = PostgresConnection(app="radar_live", tunnel=True)
+# conn = SQLServerConnection(app='renalreg_live')
 
 conn.connection_check()
 
