@@ -1,9 +1,10 @@
 from cool_stuff.cool_stuff_1 import conn
 
+
 cur = conn.cursor()
 
 query = """
-    SELECT * FROM codes
+    SELECT id FROM codes LIMIT(10)
 """
 
 cur.execute(query)
